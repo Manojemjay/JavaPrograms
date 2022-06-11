@@ -2,3 +2,8 @@ Hashing3
 Q :Hashing for Pair- You are given an array arr (distinct integers) of size n, and you are also given a sum. 
 You need to find if two numbers in arr exists that have sum equal to the given sum.Time Complexity:O(nlogn)
 i/p 4 9 /n 2 7 5 11 o/p 1
+
+
+hashing 4
+Q : Given an integer array and a non-negative integer k, count all distinct pairs with difference equal to k, i.e., A[ i ] - A[ j ] = k
+i/p 5 0 /n 1 5 5 1 5 o/p 2
