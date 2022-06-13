@@ -127,3 +127,23 @@ class Hashing5
         
     }
   }
+
+  class Hashing6
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+      Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt() , sum=sc.nextInt();
+      int arr[] = new int[n];
+      HashMap<Integer, Integer> Map = new HashMap<>();
+      for(int i=0;i<n;i++){
+        arr[i] = sc.nextInt();
+        if(Map.containsKey(sum-arr[i])){
+          System.out.println("Yes");
+          return;
+        }
+        Map.put(arr[i],1);
+      }
+      System.out.println("No");
+	}
+}
