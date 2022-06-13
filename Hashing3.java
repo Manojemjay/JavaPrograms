@@ -72,6 +72,7 @@ public class Main
 
 
  class hashing4 {
+   //Count distinct pairs with difference k
     public static void main(String args[]) {
       Scanner input = new Scanner(System.in);
       int n =input.nextInt(), k = input.nextInt();
@@ -103,3 +104,26 @@ public class Main
       System.out.println(ans);
     }
 }
+
+
+
+class Hashing5
+{
+    public static void main (String[] args) throws java.lang.Exception
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        HashMap<Integer,Integer> Map = new HashMap<>();
+        for(int i=0;i<n;i++){
+          arr[i] = sc.nextInt();
+          if(Map.containsKey(arr[i])){
+            System.out.println("true");
+            return;
+          }
+          Map.put(arr[i],1);
+        }
+        System.out.println("false");
+        
+    }
+  }
